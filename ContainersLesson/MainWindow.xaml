@@ -6,7 +6,52 @@
         xmlns:local="clr-namespace:ContainersLesson"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <!--<StackPanel Orientation="Vertical">
+        <Button Width="200" Height="50" Background="White"></Button>
+        <Button Width="200" Height="50" Background="Blue"></Button>
+        <Button Width="200" Height="50" Background="Red"></Button>
+        <StackPanel Orientation="Horizontal">
+            <Button Width="200" Height="50" Background="White"></Button>
+            <Button Width="200" Height="50" Background="Red"></Button>
+        </StackPanel>
+    </StackPanel>-->
+    <!--<DockPanel LastChildFill="True">
+        <Button DockPanel.Dock="Bottom" Width="20" Height="100" Background="Red"></Button>
+        <Button DockPanel.Dock="Left" Width="20" Height="50" Background="YellowGreen"></Button>
+        <Button DockPanel.Dock="Right" Width="20" Height="50" Background="Purple"></Button>
+        <Button DockPanel.Dock="Top" Width="20"  Height="50" Background="Aqua"></Button>
+    </DockPanel>-->
 
+    <!--<Canvas>
+        <Rectangle Panel.ZIndex="2" Fill="Aquamarine"  Width="200" Height="150"></Rectangle>
+        <Rectangle Panel.ZIndex="1" Canvas.Left="50" Canvas.Top="130" Fill="Bisque"  Width="50" Height="50"></Rectangle>
+    </Canvas>-->
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="50*"/>
+            <ColumnDefinition Width="50*"/>
+            <ColumnDefinition Width="50*"/>
+            <ColumnDefinition Width="50*"/>
+            <ColumnDefinition Width="50*"/>
+            <ColumnDefinition Width="50*"/>
+            <ColumnDefinition Width="50*"/>
+            <ColumnDefinition Width="50*"/>
+            <ColumnDefinition Width="50*"/>
+            <ColumnDefinition Width="50*"/>
+            <ColumnDefinition Width="50*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="50*"/>
+        </Grid.RowDefinitions>
+        <Button Grid.Column="0" Grid.Row="0" Background="Red" Grid.RowSpan="7" Grid.ColumnSpan="11"/>
+        <Button  Background="Yellow" Height="264" Width="272" Grid.RowSpan="7" Grid.ColumnSpan="11"/>
+        <Button Background="Blue" Height="64" Width="72"></Button>
     </Grid>
 </Window>
